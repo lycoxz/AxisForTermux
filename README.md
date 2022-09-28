@@ -12,11 +12,11 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 - Install **``paket yang dibutuhkan``** terlebih dahulu dengan membuka termux:
 
     ```
-    apt update && apt install upgrade -y
+    pkg update && pkg install upgrade -y
     ```
     
     ```
-    apt install git -y
+    pkg install git -y
     ```
     
     ```
