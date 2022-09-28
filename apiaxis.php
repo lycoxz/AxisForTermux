@@ -176,7 +176,7 @@ $dec_data_login = base64_decode((string)$data_login);
 $json_data_login = json_decode($dec_data_login, true);
 $token = "";
 $GLOBALS['token'] = $token;
-if($status_otp==true)
+if($status_login==true)
 {
     $token = $json_data_login["token"];
     echo "$Green ➤ $message_login !\n";
