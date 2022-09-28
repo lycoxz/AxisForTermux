@@ -1,7 +1,7 @@
 # AxisForTermux
 Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 
-[![Muhammad Quillen](https://i.ibb.co/NFw5zTQ/termux-apiaxis.jg)](https://www.facebook.com/LyCoXyZ/) 
+[![Muhammad Quillen](https://i.ibb.co/NFw5zTQ/termux-apiaxis.jg)(https://www.facebook.com/LyCoXyZ/) 
 
 # Required Aplication
 - Pastikan Termuxnya dari F-Droid Jangan dari Playstore, supaya enggak banyak yang error.
