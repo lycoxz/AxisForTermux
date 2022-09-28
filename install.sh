@@ -30,4 +30,3 @@ sleep 2
 
 cd
 php apiaxis.php
-clear
