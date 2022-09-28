@@ -27,6 +27,10 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
     cd AxisForTermux && chmod +x install && ./install
     ```
     
+    ```
+    ./install
+    ```
+    
 ### How Tow Run Inject Dor Axis
 - Cara menjalankan **``running``**
 
