@@ -16,8 +16,10 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 
 - git clone https://github.com/lycoxz/AxisForTermux.git
 
-- cd AxisForTermux && chmod +x install
+- cd AxisForTermux && chmod +x install && ./install
 
+# How Tow Run Inject Dor Axis
+- cd
 - ./dor
 
 # Contact Me
