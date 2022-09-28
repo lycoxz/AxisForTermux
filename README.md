@@ -9,18 +9,34 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 
 - Link Termux F-Droid https://f-droid.org/repo/com.termux_117.apk
 
-# Install
-- apt update && apt install upgrade -y
+### Install
+- Install **``paket yang dibutuhkan``** terlebih dahulu dengan membuka termux:
 
-- apt install git -y
+    ```
+    apt update && apt install upgrade -y
+    ```
+    
+    ```
+    apt install git -y
+    ```
+    
+    ```
+    git clone https://github.com/lycoxz/AxisForTermux.git
+    ```
 
-- git clone https://github.com/lycoxz/AxisForTermux.git
-
-- cd AxisForTermux && chmod +x install && ./install
-
+    ```
+    cd AxisForTermux && chmod +x install && ./install
+    ```
+    
 # How Tow Run Inject Dor Axis
-- cd
-- ./dor
+
+    ```
+    cd
+    ```
+    
+    ```
+    ./dor
+    ```
 
 # Contact Me
 - Bila masih bingung bisa di tanyakan 
