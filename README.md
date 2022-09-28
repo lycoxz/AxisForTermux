@@ -16,7 +16,9 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 
 - git clone https://github.com/lycoxz/AxisForTermux.git
 
-- cd AxisForTermux && bash install.sh
+- cd AxisForTermux && chmod +x install
+
+- ./dor
 
 # Contact Me
 - Bila masih bingung bisa di tanyakan 
