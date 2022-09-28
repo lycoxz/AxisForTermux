@@ -7,8 +7,7 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 # Required Aplication
 - Pastikan Termuxnya dari F-Droid Jangan dari Playstore, supaya enggak banyak yang error.
 
-- Link Termux F-Droid https://f-droid.org/repo/com.termux_117.apk
-
+- Link Termux F-Droid [Termux](https://f-droid.org/repo/com.termux_117.apk) 
 ### Install
 - Install **``paket yang dibutuhkan``** terlebih dahulu dengan membuka termux:
 
@@ -28,8 +27,9 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
     cd AxisForTermux && chmod +x install && ./install
     ```
     
-# How Tow Run Inject Dor Axis
-
+### How Tow Run Inject Dor Axis
+- Cara menjalankan **``running``**
+- 
     ```
     cd
     ```
