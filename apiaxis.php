@@ -27,7 +27,7 @@ class ApiCrypto
     {
         $json_enc = json_decode($this->Api_Encrypt($data), true);
         $data_enc = $json_enc["data"];
-        $decrypt_data_enc = base64_decode($data_enc,true);
+        $decrypt_data_enc = base64_decode((string)$data_enc,true);
         $json_data_enc = json_decode($decrypt_data_enc, true);
         $decrypt_3des = $json_data_enc["decrypt_3des"];
         return $decrypt_3des;
@@ -44,7 +44,7 @@ class ApiCrypto
     {
         $json_dec = json_decode($this->Api_Decrypt($data), true);
         $data_dec = $json_dec["data"];
-        $decrypt_data_dec = base64_decode($data_dec,true);
+        $decrypt_data_dec = base64_decode((string)$data_dec,true);
         $json_data_dec = json_decode($decrypt_data_dec, true);
         $encrypt_3des = $json_data_dec["encrypt_3des"];
         return $encrypt_3des;
