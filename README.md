@@ -24,9 +24,9 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
 
 # Contact Me
 - Bila masih bingung bisa di tanyakan 
-- Facebook : https://www.facebook.com/LyCoXyZ
-- Whatsapp : https://wa.me/6283195323183
+- Facebook : [Muhammad Quillen](https://www.facebook.com/LyCoXyZ/) 
+- Whatsapp : [Asep Hadad](https://wa.me/6283195323183) 
 
 # Developer - Pengembang
-- Base script and more enhancement codes by [Muhammad Quillen](https://www.facebook.com/LyCoXyZ/) 
+- Base script and more enhancement codes by [Muhammad Quillen](https://www.facebook.com/LyCoXyZ/)
 - installer and install dor codes by [Dedd](https://www.facebook.com/fookin.dr/) 
