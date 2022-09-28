@@ -1,2 +1,2 @@
 # AxisForTermux
-dor sytem injection quota free with scapper AXISnet
+Axis For Termux, dor sytem injection quota free with scapper AXISnet.
