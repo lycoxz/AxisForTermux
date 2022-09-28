@@ -29,7 +29,7 @@ Axis For Termux, dor sytem injection quota free with scapper AXISnet.
     
 ### How Tow Run Inject Dor Axis
 - Cara menjalankan **``running``**
-- 
+
     ```
     cd
     ```
