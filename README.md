@@ -1,5 +1,8 @@
-# Axis For Termux
+# Axis For Termux v2.0
 Axis For Termux, dor sytem injection quota free with scrapper AXISnet.
+
+# Security with APIKey
+- Untuk APIKey, nanti di share juga di group Facebook, Maupun Whatsapp.
 
 # Screenshot
 [![Muhammad Quillen](https://i.ibb.co/zRNbsQd/termux-apiaxis.jpg)](https://www.facebook.com/LyCoXyZ/) 
