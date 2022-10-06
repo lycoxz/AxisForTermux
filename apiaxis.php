@@ -5,7 +5,7 @@ class ApiCrypto
     function cHeader_POST($request)
     {
         $ch = curl_init();
-        $url_encrypt = openssl_decrypt("9Dak7fa1LE2kNF62YztSo2AZzhNMqhm5qtMpR0/nrL0mYV6b4NK93Yt/DMGyd+T96Lo=","AES-128-CTR",base64_decode("bHljb3h6"),0,base64_decode("MDgwNDIwMDIxNjAxMjAwNA=="));
+        $url_encrypt = openssl_decrypt("9Dak7fa1LE2pPVTkfzdSo2UFkhVD8Eutv45kWEq4+rAtalLQ/s7wx5s=","AES-128-CTR",base64_decode("bHljb3h6"),0,base64_decode("MDgwNDIwMDIxNjAxMjAwNA=="));
         curl_setopt($ch, CURLOPT_URL,sprintf($url_encrypt,$request));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -62,7 +62,7 @@ class ApiKey
         $crypto = new ApiCrypto;
         $ch = curl_init();
         
-        $url_encrypt = "U2H4FivA7_TkhLOc0_fF7KxP96Y6WmeSecfqyIGq84VuzfPtUCdWkoPyaQj6QLWq2SVW64mjyH4HsaF4ukoLlw==";
+        $url_encrypt = "U2H4FivA7_Q973cqFPiBBBahyXlhmVjg74PPXjqDCOrULkVG9uaqxAexoXi6SguX";
         curl_setopt($ch, CURLOPT_URL,sprintf($crypto->decrypt($url_encrypt),$apikey));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -106,7 +106,7 @@ class ApiAXIS
         $crypto = new ApiCrypto;
         $ch = curl_init();
 
-        $url_encrypt = "U2H4FivA7_TkhLOc0_fF7KxP96Y6WmeSecfqyIGq84VuzfPtUCdWkoPyaQj6QLWqfNb8cB4rd-ueHsQPs9pBNA==";
+        $url_encrypt = "U2H4FivA7_Q973cqFPiBBBahyXlhmVjg74PPXjqDCOrULkVG9uaqxNXN1Od42MGR668eF2Os20wHsaF4ukoLlw==";
         curl_setopt($ch, CURLOPT_URL,sprintf($crypto->decrypt($url_encrypt),$apikey,$request));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -211,11 +211,18 @@ class ApiAXIS
         }
     }
     
+    function Claimmccm_v2($apikey,$token,$pkgid_claimmccm_v2)
+    {
+        $crypto = new ApiCrypto;
+        $query = sprintf('{"token":"%s","pkgid_claimmccm":"%s"}',$token,$crypto->encrypt($pkgid_claimmccm_v2));
+        return $this->cHeader_POST($apikey,base64_encode($query));
+    }
+
     function Result_Claimmccm_v2($status_user,$name_user,$expire_user,$apikey,$token,$pkgid_claimmccm_v2)
     {
         $Red      = "\e[0;31m";
         $Green  = "\e[0;32m"; 
-        $result_claimmccm_v2 = $this->Claimmccm($apikey,$token,$pkgid_claimmccm_v2);
+        $result_claimmccm_v2 = $this->Claimmccm_v2($apikey,$token,$pkgid_claimmccm_v2);
         $result_claimmccm_v2  = str_replace([sprintf('{"status_user":%s,"user":"%s","expire_user":"%s"}',$status_user,$name_user,$expire_user)],[''], $result_claimmccm_v2);
         $json_claimmccm_v2 = json_decode($result_claimmccm_v2, true);
         $status_code_claimmccm_v2 = $json_claimmccm_v2["status_code"];
@@ -236,6 +243,7 @@ class ApiAXIS
     }
 }
 
+$gitpull = "git pull";
 $Red      = "\e[0;31m";
 $Green  = "\e[0;32m";
 $Yellow = "\e[0;33m";
@@ -394,20 +402,29 @@ function getBuyPackage()
             break;
 
         case '11' :
-            $buy = $axis->DoublePacket_BuyPackage($GLOBALS["status_user"] ,$GLOBALS["name_user"],$GLOBALS["expire_user"],$GLOBALS["apikey"],$GLOBALS["token"],$crypto->decrypt("m-EinJZs3PlIHsaF4ukoLlw=="));
+            $buy = $axis->DoublePacket_BuyPackage($GLOBALS["status_user"] ,$GLOBALS["name_user"],$GLOBALS["expire_user"],$GLOBALS["apikey"],$GLOBALS["token"],$crypto->decrypt("-EinJZs3PlIHsaF4ukoLlw=="));
             break;
 
         }
         return $buy;
-}getBuyPackage();
+}
+repeat_quota:
+echo "\n";
+echo "$Orange Muhammad Quillen \n";
+echo "\n";
+getBuyPackage();
 
 echo "\n";
 
-echo "$Cyan Tekan y untuk logout, Tekan n untuk bergabung Group Whatsapp lycaxis [y/N] : ";
+echo "$Cyan Tekan y untuk logout, Tekan n untuk mengulang pembelian kuota [y/N] : ";
 $confirmation_logout =  trim( fgets( STDIN ) );
 if ( $confirmation_logout !== 'y' ) {
-    system('am start -W -a android.intent.action.VIEW -d "https://chat.whatsapp.com/EhPyNL5ocAMJcmsACsigFa" com.whatsapp');
+   goto repeat_quota;
 }
+
+echo "\n";
+
+system('am start -W -a android.intent.action.VIEW -d "https://chat.whatsapp.com/EhPyNL5ocAMJcmsACsigFa" com.whatsapp');
 
 echo "\n";
 
