@@ -413,7 +413,7 @@ echo "\n";
 
 }else{
     echo "\n";
-    echo "$Red ".$capikey->get_name_user($GLOBALS["apikey"]. "\n";
+    echo "$Red ".$capikey->get_name_user($GLOBALS["apikey"]). "\n";
     echo "\n";
     goto repeat_apikey;
 }
